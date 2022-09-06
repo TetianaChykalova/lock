@@ -20,6 +20,11 @@
 <div class="container-fluid">
     <!--    header-->
     <header class="header__header">
+        <div class="header__burger">
+            <div class="burger__line" id="burger-line">
+                <span></span>
+            </div>
+        </div>
         <section class="header__top">
             <section class="header__top-left">
                 <div class="header__logo">
@@ -55,14 +60,14 @@
             </section>
         </section>
         <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="nav__item">
+            <ul class="nav__list" id="burger-content">
+                <li class="nav__item nav__item-active">
                     <a href="index-ru.html" class="nav__link">ГЛАВНАЯ</a>
                 </li>
                 <li class="nav__item">
                     <a href="problems.html" class="nav__link">ПРОБЛЕМЫ И РЕШЕНИЯ</a>
                 </li>
-                <li class="nav__item nav__item-active">
+                <li class="nav__item">
                     <a href="documents.html" class="nav__link">ГАРАНТИИ И ДОКУМЕНТЫ</a>
                 </li>
                 <li class="nav__item">
@@ -76,6 +81,16 @@
                 </li>
                 <li class="nav__item">
                     <a href="faq.html" class="nav__link">FAQ</a>
+                </li>
+                <li class="header__burger-language">
+                    <div class="header__language">
+                        <div class="header__language-uk">
+                            <a href="index-uk.html">UKR</a>
+                        </div>
+                        <div class="header__language-ru">
+                            <a href="index-ru.html">RU</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
