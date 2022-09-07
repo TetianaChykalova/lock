@@ -4,4 +4,5 @@ let burgerContent = document.querySelector("#burger-content");
 
 burgerLine.addEventListener("click", function () {
     burgerContent.classList.toggle("active");
+    document.body.classList.toggle("overflow-hidden");
 })

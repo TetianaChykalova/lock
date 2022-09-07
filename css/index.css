@@ -1,0 +1,237 @@
+@import "nullstyle.css";
+
+/*main*/
+.main__index-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 120%;
+    color: #FF4500;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+/*вступительная речь*/
+.main__index-info {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.main__index-info p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+}
+/*кратко об услугах и кнопочка "заказать"*/
+.main__index-offer {}
+.index__offer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+.index__offer-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 305px;
+    background: rgba(61, 58, 53, 0.63);
+    padding: 5px 5px 0 5px;
+}
+.index__offer-img {
+    width: 290px;
+    height: 175px;
+    margin: 0 0 30px 0;
+}
+.index__offer-img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+.index__offer-title {
+    max-width: 230px;
+}
+.index__offer-title h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.index__offer-button {
+    background: #FF7800;
+    margin: 0 -5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+}
+.index__offer-button a {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding: 0 5px;
+}
+.index__offer-master {
+    width: 245px;
+    height: 57px;
+    margin: 0 auto;
+    background: #FF7800;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index__offer-master a {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+/*куча текаста на главной странице*/
+.main__index-text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #000000;
+}
+.main__index-text p {
+    margin: 0 0 20px 0;
+}
+.main__index-text li {
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 0 10px 0;
+}
+.main__index-text li:last-child {
+    margin: 0;
+}
+.main__index-text li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #FF4500;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+/*отзывы и ссылочка на них*/
+.main__index-review {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.index__review-text {
+    background: #FFF;
+    color: #000;
+    border: rgba(61, 58, 53, 0.63) 5px solid;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+}
+.index__review-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main__review-button {
+    height: 35px;
+    width: 300px;
+    background: #FF7800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.main__review-button a {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+/*ADAPTIVE*/
+@media (max-width: 992px) {
+    .index__offer-item {
+        width: 250px;
+        height: 260px;
+        padding: 5px 5px 0 5px;
+    }
+    .index__offer-img {
+        width: 240px;
+        height: auto;
+        margin: 0 0 15px 0;
+    }
+}
+@media (max-width: 767px) {
+    .index__offer-items {
+        padding: 0 5px;
+    }
+    .index__offer-item {
+        width: 33.333%;
+        height: 100px;
+        margin: 0 -5px;
+    }
+    .index__offer-img {
+        display: none;
+    }
+    .index__offer-title h3,
+    .index__offer-button a {
+        font-size: 0.875rem;
+    }
+    .index__offer-master {
+        max-width: 200px;
+        height: 40px;
+    }
+    .index__offer-master a {
+        font-size: 0.7rem;
+    }
+    .main__review-button {
+        max-width: 200px;
+    }
+    .main__review-button a {
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 480px) {
+    .main__index-info p {
+        font-size: 0.875rem;
+        text-align: left;
+    }
+    .index__offer-items {
+        flex-direction: column;
+        padding: 0;
+    }
+    .index__offer-item {
+        min-width: 100%;
+        height: 90px;
+        margin: 0 0 20px 0;
+    }
+    .index__offer-title,
+    .index__offer-button {
+        min-width: 100%;
+    }
+    .index__offer-button {
+        justify-content: center;
+        text-align: center;
+    }
+    .index__offer-title h3 {
+        text-align: center;
+    }
+    .index__offer-master a {
+        font-size: 0.7rem;
+    }
+    .index__review-buttons {
+        flex-wrap: wrap;
+    }
+    .main__review-button {
+        margin: 0 auto 20px;
+    }
+    .main__review-button:last-child {
+        margin-bottom: 0;
+    }
+    .main__review-button a {
+        text-align: center;
+    }
+}
