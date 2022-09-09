@@ -1,14 +1,6 @@
 @import "nullstyle.css";
 
 /*main*/
-.main__index-title {
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 120%;
-    color: #FF4500;
-    margin: 0 0 20px 0;
-    text-align: center;
-}
 
 /*вступительная речь*/
 .main__index-info {
@@ -36,8 +28,10 @@
     justify-content: space-between;
     width: 300px;
     height: 305px;
-    background: rgba(61, 58, 53, 0.63);
+    background: #FFF;
     padding: 5px 5px 0 5px;
+    border: rgba(61, 58, 53, 0.63) 3px solid;
+    border-radius: 10px;
 }
 .index__offer-img {
     width: 290px;
@@ -55,12 +49,14 @@
     font-weight: 700;
     font-size: 1rem;
     line-height: 120%;
-    color: #FFFFFF;
+    color: rgba(61, 58, 53, 0.9);
 }
 .index__offer-button {
     background: #FF7800;
     margin: 0 -5px;
-    height: 35px;
+    height: 36px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     display: flex;
     align-items: center;
 }
