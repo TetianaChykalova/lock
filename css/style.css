@@ -163,7 +163,7 @@ body {
 
 /*ADAPTIVE*/
 @media (max-width: 1200px) {
-/*    header*/
+    /*    header*/
     .nav__link {
         font-size: 1rem;
     }

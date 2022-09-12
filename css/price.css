@@ -1,0 +1,111 @@
+.price__main-title {}
+.price__main-offer {}
+.price__offer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.price__offer-item {
+    width: 33.333%;
+    margin: 0 -10px;
+    padding: 30px 15px;
+    background: #FFF;
+    border: rgba(61, 58, 53, 0.63) 3px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.price__offer-item h5 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #000000;
+    margin: 0 0 10px 0;
+}
+.price__offer-item p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #000000;
+
+}
+.price__offer-title {
+    margin: 0 0 30px 0;
+}
+.price__offer-title h4 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    color: #FF4500;
+}
+.price__offer-included {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 17px 0;
+}
+.price__offer-included h5 {
+    max-width: 150px;
+}
+.price__offer-included ol {}
+.price__offer-included li {
+    margin: 0 0 10px 0;
+}
+.price__offer-included li:last-child {
+    margin: 0;
+}
+.price__offer-time {
+    margin: 0 0 17px 0;
+}
+.price__offer-required {
+    margin: 0 0 17px 0;
+}
+.price__offer-cost {
+    margin: 0 0 17px 0;
+}
+.price__offer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FF7800;
+    border-radius: 10px;
+    width: 100%;
+}
+.price__offer-button a {
+    display: inline-block;
+    padding: 10px 0;
+    max-width: 230px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+
+
+/*ADAPTIVE*/
+@media (max-width: 992px) {
+    .price__offer-items {
+        flex-direction: column;
+        padding: 0;
+    }
+    .price__offer-item {
+        margin: 0 0 30px 0;
+        min-width: 100%;
+    }
+    .price__offer-item:last-child {
+        margin: 0;
+    }
+    .price__offer-included {
+        flex-direction: column;
+    }
+    .price__offer-included ol {
+        padding: 0 0 0 20px;
+    }
+}
+
+
+
+
