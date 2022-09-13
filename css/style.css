@@ -136,31 +136,35 @@ body {
     padding: 5px 8px;
 }
 
-.selectlink {
+/*change lang*/
+.nav__select {
     position: relative;
     display: inline-block;
-    width: 200px;
     text-align: left;
     margin: 10px;
 }
-.selectlink-control {
+.nav__select-control {
     position: relative;
-    padding: 10px 15px;
-    border: 1px solid #dcdfe6;
+    padding: 5px 35px 5px 10px;
+    border: 3px solid rgba(197, 193, 193, 0.57);
     border-radius: 4px;
     background: #fff;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: #3D3A35;
 }
-.selectlink-control:after {
+.nav__select-control:after {
     content: '';
     border: 5px solid transparent;
     border-top: 5px solid #999;
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 10px;
     margin-top: -3px;
 }
-.selectlink ul {
+.nav__select ul {
     display: none;
     box-sizing: border-box;
     margin: 0;
@@ -170,7 +174,7 @@ body {
     max-height: 200px;
     position: absolute;
     top: 100%;
-    left: 0px;
+    left: 0;
     border: 1px solid #dadada;
     border-top: none;
     background: #fff;
@@ -178,36 +182,34 @@ body {
     overflow: auto;
     user-select: none;
 }
-.selectlink li {
+.nav__select li {
     display: block;
     margin: 0;
     padding: 0;
 }
-.selectlink li a {
+.nav__select li a {
     position: relative;
     display: block;
     margin: 0;
     padding: 4px 6px 4px 15px;
-    font-weight: normal;
-    font-size: 1em;
-    line-height: 1.1;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: #3D3A35;
     cursor: pointer;
     text-decoration: none;
-    color: #333;
 }
-.selectlink li a:hover {
+.nav__select li a:hover {
     background: #03a2ff;
     color: #fff;
 }
+
 
 @media screen and (max-width: 700px) {
     .body_pointer {
         cursor: pointer;
     }
 }
-
-
-
 
 
 
