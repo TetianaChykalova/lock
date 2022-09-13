@@ -1,0 +1,85 @@
+.review__list
+.review__items {
+    display: flex;
+    flex-direction: column;
+}
+.review__item {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: #FFF;
+    border: rgba(61, 58, 53, 0.63) 5px solid;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+}
+.review__item:last-child {
+    margin: 0;
+}
+.review__item-img {
+    max-width: 100px;
+    margin: 0 20px 0 0;
+}
+.review__item-img img {
+    width: 100%;
+}
+.review__item-info {
+    display: flex;
+    flex-direction: row;
+}
+.review__item-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review__item-left {
+    display: flex;
+    flex-direction: column;
+}
+.review__item-name {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 120%;
+    color: #000000;
+    margin: 0 0 15px 0;
+}
+.review__item-date {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 120%;
+    color: rgba(61, 58, 53, 0.88);
+    margin: 0 0 30px 0;
+}
+.review__item-right {
+    min-width: 112px;
+    background: url('../img/icons/star-gold.png') 0 0 no-repeat,
+    url('../img/icons/star-gold.png') 20px 0 no-repeat,
+    url('../img/icons/star-gold.png') 40px 0 no-repeat,
+    url('../img/icons/star-gold.png') 60px 0 no-repeat,
+    url('../img/icons/star-gold.png') 80px 0 no-repeat;
+}
+
+
+/*adaptive*/
+@media (max-width: 767px) {
+    .review__item {
+        padding: 10px;
+    }
+    .review__item-name {
+        margin: 0 0 10px 0;
+    }
+    .review__item-date {
+        margin: 0 0 20px 0;
+    }
+}
+@media (max-width: 460px) {
+    .review__item-img,
+    .review__item-right {
+        display: none;
+    }
+}
+
+
+
+
+
+
