@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <title>Контакты</title>
 </head>
 <body>
@@ -97,7 +98,59 @@
     </header>
 
     <!--    main-->
-    <main></main>
+    <main class="main">
+        <section>
+            <h3 class="main__title">КАК С НАМИ СВЯЗАТЬСЯ</h3>
+        </section>
+        <section class="contacts">
+            <div class="contacts__div">
+                <div class="contacts__img">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="contacts__info">
+                    <div class="contacts__top">
+                        <div class="contacts__tel">
+                            <p>Телефон:</p>
+                            <a href="tel:+380999999999">(099) 999 9999</a>
+                            <a href="tel:+380979999999">(097) 999 9999</a>
+                        </div>
+                        <div class="contacts__email">
+                            <p>Электронная почта</p>
+                            <a href="mailto:index@example.com">index@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contacts__soc">
+                        <a href="#">
+                            <img src="img/icons/telegram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/viber.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/watsapp.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="forms">
+            <p>
+                Остались вопросы?
+            </p>
+            <p>
+                Оставьте свои контакты и мы свяжемся с вами при первой возможности
+            </p>
+            <div class="forms__div">
+                <form action="mailto:chikalova.t@gmail.com">
+                    <label for="forms-name"></label>
+                    <input id="forms-name" type="text" name="name" value="" placeholder="Ваше имя">
+                    <label for="forms-tel"></label>
+                    <input id="forms-tel" type="tel" name="tel" value="" placeholder="Ваш номер телефона">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
 
     <!--    container fluid-->

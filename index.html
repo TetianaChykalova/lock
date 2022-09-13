@@ -12,8 +12,8 @@
 
     <link rel="shortcut icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>Универсал ключ сервис</title>
 </head>
 <body>
@@ -27,38 +27,23 @@
             </div>
         </div>
         <section class="header__top">
-            <section class="header__top-left">
-                <div class="header__logo">
-                    <img src="img/logo.png" alt="logo">
-                </div>
-            </section>
-            <section class="header__top-center">
-                <div class="header__name">
-                    <h1>УНИВЕРСАЛ КЛЮЧ СЕРВИС</h1>
-                </div>
-                <div class="header__description">
-                    <h2>АВАРИЙНОЕ ОТКРЫТИЕ</h2>
-                    <ul>
-                        <li>автомобилей</li>
-                        <li>квартир</li>
-                        <li>сейфов</li>
-                    </ul>
-                </div>
-                <div class="header__location">
-                    <h2>ЗАПОРОЖЬЕ</h2>
-                </div>
-            </section>
-            <section class="header__rop-right">
-                <div class="header__language">
-                    <div class="header__language-uk">
-                        <a href="index-uk.html">UKR</a>
-                    </div>
-                    <div class="header__language-line"></div>
-                    <div class="header__language-ru">
-                        <a href="index.html">RU</a>
-                    </div>
-                </div>
-            </section>
+            <div class="header__logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="header__name">
+                <h1>УНИВЕРСАЛ КЛЮЧ СЕРВИС</h1>
+            </div>
+            <div class="header__description">
+                <h2>АВАРИЙНОЕ ОТКРЫТИЕ</h2>
+                <ul>
+                    <li>автомобилей</li>
+                    <li>квартир</li>
+                    <li>сейфов</li>
+                </ul>
+            </div>
+            <div class="header__location">
+                <h2>ЗАПОРОЖЬЕ</h2>
+            </div>
         </section>
         <nav class="header__nav">
             <ul class="nav__list" id="burger-content">
@@ -82,6 +67,14 @@
                 </li>
                 <li class="nav__item">
                     <a href="faq.html" class="nav__link">FAQ</a>
+                </li>
+                <li class="nav__item selectlink">
+                    <div class="selectlink-control">RU</div>
+                    <ul>
+                        <li>
+                            <a href="index-uk.html">UA</a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="header__burger-language">
                     <div class="header__language">
@@ -228,6 +221,8 @@
 <!--    container fluid-->
 </div>
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/lang.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,116 @@
+.contacts {}
+.contacts__div {
+    max-width: 1120px;
+    background: #FFF;
+    border: rgba(61, 58, 53, 0.63) 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.contacts__img {
+    max-width: 350px;
+    margin: 0 60px 0 0;
+}
+.contacts__img img {
+    width: 100%;
+}
+.contacts__info {
+    font-size: 1.25rem;
+    line-height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contacts__tel {
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contacts__email {
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contacts__tel p,
+.contacts__email p {
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+.contacts__tel a,
+.contacts__email a {
+    font-weight: 400;
+    color: #000000;
+    text-decoration: underline;
+}
+.contacts__soc {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+}
+.contacts__soc img {
+    height: 100%;
+}
+
+.forms {}
+.forms p {
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.25rem;
+    line-height: 120%;
+}
+.forms__div {
+    max-width: 1120px;
+    background: #FFF;
+    border: rgba(61, 58, 53, 0.63) 5px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
+.forms__div form {
+    display: flex;
+    flex-direction: column;
+}
+.forms__div input {
+    height: 40px;
+    margin: 0 0 15px 0;
+    border-bottom: rgba(61, 58, 53, 0.63) 3px solid;
+}
+.forms__div input:last-child {
+    margin: 0 0 30px 0;
+}
+.forms__div button {
+    max-width: 300px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FF7800;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+
+
+
+/*adaptive*/
+@media (max-width: 767px) {
+    .contacts__div,
+    .forms__div {
+        padding: 10px;
+    }
+    .contacts__img {
+        max-width: 200px;
+        margin: 0 20px 0 0;
+    }
+}
+@media (max-width: 480px) {
+    .contacts__div,
+    .forms__div {
+        padding: 3px;
+    }
+    .contacts__img {
+        display: none;
+    }
+}
