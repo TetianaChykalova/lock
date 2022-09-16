@@ -346,14 +346,23 @@ body {
         background: rgba(0, 0, 0, 0.25);
         height: 100%;
         width: 65px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-    .header__language-uk {
-        border-right: 1px solid #3D3A35;
+    /*.header__language-uk {*/
+    /*    border-right: 1px solid #3D3A35;*/
+    /*}*/
+    .nav__change-lang {
+        border: #FFFFEE 2px solid;
+        border-radius: 4px;
+    }
+    .nav__change-lang a {
+        text-decoration: underline;
     }
     .header__language-uk a,
     .header__language-ru a {
         color: #fff;
-        padding: 13px 7px 0 0;
         font-size: 1.125rem;
         font-weight: 400;
     }
