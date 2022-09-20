@@ -47,6 +47,11 @@ body {
     color: #FF4500;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+.header__tel p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgba(61, 58, 53, 0.88);
+}
 .header__description {
     color: rgba(61, 58, 53, 0.88);
     display: flex;
@@ -239,10 +244,24 @@ body {
     .nav__link {
         font-size: 1rem;
     }
+    .header__tel p {
+        font-size: 1rem;
+    }
+    .header__name h1 {
+        margin: 0 15px 0 0;
+    }
+    .header__description h2 {
+        margin: 0 15px 0 0;
+        font-size: 1.25rem;
+    }
+    .header__description li {
+        font-size: 1rem;
+    }
 }
 @media (max-width: 992px) {
     /*    header*/
-    .header__location {
+    .header__location,
+    .header__tel {
         display: none;
     }
     .header__description h2 {
