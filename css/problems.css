@@ -8,6 +8,29 @@
 .main__problems-info p:last-child {
     margin: 0;
 }
+.main__problems-info ul {}
+.main__problems-info li {
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 0 10px 0;
+    line-height: 120%;
+}
+.main__problems-info li:last-child {
+    margin: 0;
+}
+.main__problems-info li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #FF4500;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+strong {
+    font-weight: 700;
+}
 
 .main__problem-list {}
 .main__problem-items {
@@ -39,7 +62,7 @@
 }
 .main__problem-item-info-rev .main__problem-text {
     margin: 0 0 0 10px;
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -55,7 +78,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 .problem__img-logo {
     position: absolute;
@@ -73,6 +96,26 @@
     color: #000000;
     margin: 0 0 20px 0;
 }
+.main__problem-text ul {}
+.main__problem-text li {
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 0 10px 0;
+    line-height: 120%;
+}
+.main__problem-text li:last-child {
+    margin: 0;
+}
+.main__problem-text li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #FF4500;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
 .main__problem-button {
     background: #FF7800;
     border-radius: 10px;
@@ -89,6 +132,7 @@
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 

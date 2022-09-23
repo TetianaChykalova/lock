@@ -40,6 +40,7 @@ body {
 }
 .header__name h1,
 .header__location h2 {
+    text-transform: uppercase;
     font-style: normal;
     font-weight: 700;
     font-size: 1.5rem;
@@ -58,6 +59,7 @@ body {
     flex-direction: row;
 }
 .header__description h2 {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 120%;
@@ -130,6 +132,7 @@ body {
     font-size: 1.125rem;
     line-height: 120%;
     color: #3D3A35;
+    text-transform: uppercase;
 }
 .nav__item-active {
     background: #FF7800;
@@ -229,6 +232,7 @@ body {
     margin-bottom: 32px;
 }
 .main__title {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.25rem;
     line-height: 120%;
