@@ -75,7 +75,8 @@
     border-radius: 10px;
     width: 100%;
 }
-.price__offer-button a {
+.price__offer-button a,
+.price__offer-button p {
     display: inline-block;
     padding: 10px 0;
     max-width: 230px;
@@ -89,6 +90,11 @@
 
 
 /*ADAPTIVE*/
+@media (min-width: 767px) {
+    .price__offer-button a {
+        display: none;
+    }
+}
 @media (max-width: 992px) {
     .price__offer-items {
         flex-direction: column;
@@ -108,7 +114,11 @@
         padding: 0 0 0 20px;
     }
 }
-
+@media (max-width: 767px) {
+    .price__offer-button p {
+        display: none;
+    }
+}
 
 
 
