@@ -78,6 +78,7 @@
     align-items: center;
 }
 .faq__contact-button a {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 1rem;
     line-height: 120%;

@@ -16,6 +16,9 @@
     display: flex;
     flex-direction: column;
 }
+.price__offer-item_main {
+    flex: 1 1 auto;
+}
 .price__offer-item h5 {
     font-weight: 700;
     font-size: 1rem;
@@ -40,14 +43,14 @@
     color: #FF4500;
 }
 .price__offer-included {
-    display: flex;
-    flex-direction: row;
     margin: 0 0 17px 0;
 }
 .price__offer-included h5 {
     max-width: 150px;
 }
-.price__offer-included ol {}
+.price__offer-included ol {
+    margin: 0 0 0 25px;
+}
 .price__offer-included li {
     margin: 0 0 10px 0;
 }
