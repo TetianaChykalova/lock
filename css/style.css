@@ -6,6 +6,8 @@ body {
 }
 .container-fluid {
     padding: 0;
+    position: relative;
+    min-height: 100%;
 }
 
 /*header*/
@@ -238,12 +240,14 @@ body {
 
 /*main*/
 .main {
-    padding: 32px 5px;
+    padding: 30px 5px 100px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
+    display: flex;
+    flex-direction: column;
 }
 .main section {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 .main__title {
     text-transform: uppercase;
@@ -253,6 +257,42 @@ body {
     color: #FF4500;
     margin: 0 0 30px 0;
     text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer:before {
+    content: '';
+    width: 90%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 0 auto 30px;
+}
+.footer__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer__row div:first-child {
+    margin: 0 50px 0 0;
+}
+.footer p {
+    font-size: 0.875rem;
+    line-height: 120%;
+    color: #000;
+}
+.footer a {
+    font-size: 0.875rem;
+    line-height: 120%;
+    color: #FF4500;
 }
 
 
@@ -290,6 +330,21 @@ body {
     }
     .nav__link {
         font-size: 0.825rem;
+    }
+}
+@media (max-width: 767px) {
+    .footer {
+        padding: 0 5px;
+    }
+    .footer__row {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer:before {
+        width: 99%;
+    }
+    .footer__row div:first-child {
+        margin: 0;
     }
 }
 
@@ -333,7 +388,9 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        background: #FF7800;
+        /*background: #FF7800;*/
+        background: #FF7800 url('../img/logo-small.png') 5px 5px no-repeat;
+        background-size: 40px;
         z-index: 8;
         box-shadow: 0 6px 4px rgba(0, 0, 0, 0.15);
     }
@@ -349,7 +406,6 @@ body {
         height: 100vh;
         z-index: 4;
         background: #FFFFE0;
-        /*background: #FF4500;*/
         text-align: right;
         transition: all 0.5s ease 0s;
         overflow: auto;

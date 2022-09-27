@@ -47,7 +47,7 @@
 .contacts__soc {
     display: flex;
     flex-direction: row;
-    height: 45px;
+    height: 60px;
 }
 .contacts__soc img {
     height: 100%;
